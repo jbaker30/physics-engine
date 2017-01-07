@@ -5,6 +5,7 @@ SimNode::SimNode(QObject *parent)
 {
 	pos = QVector2D(0, 0);
 	bounceFactor = 0.8;
+	resistance = 0.98; //is futile
 }
 
 SimNode::~SimNode()
@@ -14,9 +15,16 @@ SimNode::~SimNode()
 
 void SimNode::UpdatePos()
 {
+	acc = QVector2D(0,1);
+	//calculate forces
+	for each (QVector2D f in forces)
+	{
+		acc += f;
+	}
 	//calculate gravity acc
-	vel = QVector2D(vel.x(), vel.y() + 1 );
-	//vel *= 0.95;
+	vel += acc;
+	vel *= resistance; //replace with acceleration?
+
 	float newY = pos.y() + vel.y();
 	float newX = pos.x() + vel.x();
 	//bouncing off walls
@@ -26,8 +34,11 @@ void SimNode::UpdatePos()
 		if (vel.length() < 2) bounceFactor = 0;
 		else if (vel.length() < 5) bounceFactor = 0.3;
 		else if (vel.length() < 9) bounceFactor = 0.5;
+		//if (vel.length() < 2) resistance = 0;
+		//else if (vel.length() < 5) resistance = 0.3;
+		//else if (vel.length() < 9) resistance = 0.5;
 
-		vel = QVector2D(vel.x() * bounceFactor, vel.y() * -bounceFactor);
+		vel = QVector2D(vel.x(), vel.y() * -bounceFactor);
 	}
 	if (newX > 790 || newX < 10)
 	{
@@ -35,6 +46,7 @@ void SimNode::UpdatePos()
 	}
 	else
 	{
+		//resistance = 0.98;
 		bounceFactor = 0.8;
 	}
 	pos += vel;

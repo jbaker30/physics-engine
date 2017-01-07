@@ -5,20 +5,23 @@
 #include <QObject>
 #include <QVector2D>
 #include <QList>
+#include <simnode.h>
 
 class SimConnection : public QObject
 {
 	Q_OBJECT
 
 public:
-	SimConnection(QObject *parent);
+	//SimConnection(QObject *parent);
+	SimConnection(QObject *parent, SimNode * start, SimNode * end);
 	~SimConnection();
-	QVector2D pos;
+	QVector2D vect;
 	float extension;
 	const float baseLength = 100;
-	std::array<QVector2D, 2> conNodes;
+	std::array<SimNode*, 2> conNodes;
 	float tension;
-	
+	const float k = 0.2;
+	void CalcForces();
 
 private:
 	

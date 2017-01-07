@@ -8,6 +8,7 @@
 #include <QMouseEvent>
 #include <QTimer>
 #include <simnode.h>
+#include <simconnection.h>
 
 class CustomRender : public QGraphicsView
 {
@@ -17,12 +18,14 @@ public:
 	CustomRender(QWidget *parent);
 	~CustomRender();
 	QPen outlinePen;
+	QPen fixPen;
 	QGraphicsScene * scene;
 	SimNode * node;
-	//SimNode * fixedNode;
+	SimNode * fixedNode;
+	SimConnection * spring;
 	bool nodeDragging;
-	void DrawNode(SimNode * n);
-	void DrawConnection(QVector2D pos1, QVector2D pos2);
+	void DrawNode(SimNode * n, QPen pen);
+	void DrawConnection(SimConnection * c);
 	void CUpdate();
 	bool CheckCollision(QVector2D mousePos);
 
