@@ -22,6 +22,6 @@ void SimConnection::CalcForces()
 {
 	vect = conNodes[0]->pos - conNodes[1]->pos;
 	extension = (vect.length() - baseLength)/vect.length();
-	conNodes[0]->forces.append(vect * extension * -k);
-	conNodes[1]->forces.append(vect * extension * k);
+	conNodes[0]->forces.append((vect * extension * -k) + (vect * c));
+	conNodes[1]->forces.append((vect * extension * k) + (vect * -c));
 }

@@ -1,3 +1,11 @@
-﻿  customrender.cpp
+﻿  Moc'ing simconnection.h...
+  moc_customrender.cpp
+  moc_jellysquare.cpp
+  moc_simconnection.cpp
+  customrender.cpp
+  jellysquare.cpp
+  main.cpp
+  simconnection.cpp
+  Generating Code...
   Jelly Square.vcxproj -> C:\Users\jessi\documents\visual studio 2015\Projects\Jelly Square\x64\Debug\Jelly Square.exe
   Jelly Square.vcxproj -> C:\Users\jessi\documents\visual studio 2015\Projects\Jelly Square\x64\Debug\Jelly Square.pdb (Full PDB)

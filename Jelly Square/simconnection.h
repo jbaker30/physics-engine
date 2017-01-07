@@ -21,6 +21,7 @@ public:
 	std::array<SimNode*, 2> conNodes;
 	float tension;
 	const float k = 0.2;
+	const float c = 0.05;
 	void CalcForces();
 
 private:
