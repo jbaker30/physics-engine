@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>840</width>
-    <height>572</height>
+    <width>841</width>
+    <height>690</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -47,13 +47,263 @@
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
+   <widget class="QSlider" name="massSlider">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mass</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>550</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Spring Coefficient</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="springSlider">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>520</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="sliderPosition">
+     <number>20</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>550</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Damping Coefficient</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="dampingSlider">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>520</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+    <property name="sliderPosition">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="resistanceSlider">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>580</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resistance</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="massLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>520</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="springLabel">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>520</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>20</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dampingLabel">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>520</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resistanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>580</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>98</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="intLabel">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>580</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>20</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="intSlider">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>580</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="sliderPosition">
+     <number>20</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>610</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Internal Pressure</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>840</width>
+     <width>841</width>
      <height>21</height>
     </rect>
    </property>
@@ -74,10 +324,280 @@
    <class>CustomRender</class>
    <extends>QGraphicsView</extends>
    <header>customrender.h</header>
+   <slots>
+    <signal>ResetMass(int)</signal>
+    <signal>ResetSpring(int)</signal>
+    <signal>ResetDamper(int)</signal>
+    <signal>ResetResistance(int)</signal>
+    <signal>ResetPressure(int)</signal>
+    <slot>ChangeMass(int)</slot>
+    <slot>ChangeDamper(int)</slot>
+    <slot>ChangeSpring(int)</slot>
+    <slot>ChangeResistance(int)</slot>
+    <slot>ChangePressure(int)</slot>
+    <slot>ResetSimulation()</slot>
+   </slots>
   </customwidget>
  </customwidgets>
  <resources>
   <include location="jellysquare.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>massSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>massLabel</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>springSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>springLabel</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dampingSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>dampingLabel</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>666</x>
+     <y>562</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resistanceSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>resistanceLabel</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>620</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>621</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>massSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>graphicsView</receiver>
+   <slot>ChangeMass(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>83</x>
+     <y>503</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>springSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>graphicsView</receiver>
+   <slot>ChangeSpring(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>341</x>
+     <y>504</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dampingSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>graphicsView</receiver>
+   <slot>ChangeDamper(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>561</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>582</x>
+     <y>475</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resistanceSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>graphicsView</receiver>
+   <slot>ChangeResistance(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>626</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>intSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>intLabel</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>630</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>624</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>intSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>graphicsView</receiver>
+   <slot>ChangePressure(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graphicsView</sender>
+   <signal>ResetMass(int)</signal>
+   <receiver>massSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>553</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graphicsView</sender>
+   <signal>ResetResistance(int)</signal>
+   <receiver>resistanceSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>622</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graphicsView</sender>
+   <signal>ResetSpring(int)</signal>
+   <receiver>springSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>568</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graphicsView</sender>
+   <signal>ResetPressure(int)</signal>
+   <receiver>intSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>622</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graphicsView</sender>
+   <signal>ResetDamper(int)</signal>
+   <receiver>dampingSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>623</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>598</x>
+     <y>562</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphicsView</receiver>
+   <slot>ResetSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>691</x>
+     <y>455</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

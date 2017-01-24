@@ -17,9 +17,6 @@ class JellySquare : public QMainWindow
 public:
 	JellySquare(QWidget *parent = 0);
 	~JellySquare();
-	SimNode * node;
-	SimNode * draggedNode;
-	int lookAtMe;
 
 private:
 	Ui::JellySquareClass ui;

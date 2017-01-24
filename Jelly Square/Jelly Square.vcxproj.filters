@@ -77,6 +77,15 @@
     <ClCompile Include="GeneratedFiles\Release\moc_simconnection.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="simelement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_simelement.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_simelement.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="jellysquare.h">
@@ -95,6 +104,9 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="simconnection.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="simelement.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
